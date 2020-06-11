@@ -29,7 +29,7 @@ services:
     depends_on:
       - pgdb
       - redis
-    command: ["./wait-for-it.sh", "pgdb:5432", "--", "sh", "./start.sh"]
+    command: ["pgdb:5432", "--", "sh", "./start.sh"]
 
   frontend:
     build: frontend
