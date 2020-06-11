@@ -1,0 +1,32 @@
+<section class="section is-small is-outlined">
+    <div class="container">
+        <h1 class="title">Login</h1>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control">
+                    <input class="input" id="username" type="text" formControlName="username">
+                </div>
+            </div>
+        
+            <div class="field">
+                <label class="label">
+                    Password
+                </label>
+                <div class="control">
+                    <input class="input" id="password" type="text" formControlName="password">
+                </div>
+            </div>
+        
+            <div class="buttons">
+                <button class="button is-primary" type="submit">
+                    Log In
+                </button>
+                <a routerLink="/signup" class="button is-light">Sign Up</a>
+            </div>
+            
+        
+        </form>
+    </div>
+  </section>

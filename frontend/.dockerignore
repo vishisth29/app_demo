@@ -1,0 +1,4 @@
+node_modules
+nbproject
+app/**/*.js
+app/**/*.js.*

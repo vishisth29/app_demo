@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "installing nodejs and npm"
+mkdir ~/node-latest-install && cd $_ && \
+curl -L http://nodejs.org/dist/v13.1.0/node-v13.1.0-linux-x64.tar.xz | tar xJ \
+&& cd node-v13.1.0-linux-x64 && \
+cp -r bin include lib share /usr;

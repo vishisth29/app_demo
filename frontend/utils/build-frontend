@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rm -rf node_modules/;
+
+npm cache clean --force
+npm install --no-optional;
+
+export PATH="$PATH:$(realpath ./node_modules/.bin)";
+echo "export PATH=$PATH" >> ~/.bashrc;
+
+rm -rf dist/ ;
+# echo "1" $(pwd)
+# echo "2" $(ls)
+#ng --version
+npm run build;
+# echo "3"

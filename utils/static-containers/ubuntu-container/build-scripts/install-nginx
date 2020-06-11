@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+apt-get update;
+apt-get upgrade -yq;
+apt-get install xz-utils=5.1.1alpha+20120614-2ubuntu2 -yq;
+apt-get install nginx=1.10.3-0ubuntu0.16.04.5 -yq;

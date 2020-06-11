@@ -1,0 +1,20 @@
+users:
+    - { 
+        user_id: 1,
+        username: user1,
+        pw_hash: pass1,
+        name: User One 
+    }
+    - {
+        user_id: 2,
+        username: user2,
+        pw_hash: 1ba3d16e9881959f8c9a9762854f72c6e6321cdd44358a10a4e939033117eab9,
+        name: User Two,
+    }
+    
+incorrect_user:
+    user_id: 1
+    username: user1
+    pw_hash: abc123
+    name: User One
+    

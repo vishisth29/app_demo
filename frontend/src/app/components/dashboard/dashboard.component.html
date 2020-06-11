@@ -1,0 +1,37 @@
+<div class="section">
+    <div class="columns is-full-height">
+        <div class="column">
+            <aside class="menu">
+                
+            </aside>
+        </div>
+
+        <div class="column is-three-quarters">
+            <p>Hello {{currentUser.name}}!</p>
+            <!-- User Dues -->
+            <section class="section">
+                <div class="columns">
+                    <div class="column">
+                        <p></p>
+                        <table class="table is-striped is-fullwidth">
+                            <tbody>
+                                <tr *ngFor="let userDebt of userDebts; let i = index">
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column">
+                        <p></p>
+                        <table class="table is-striped is-fullwidth">
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <p></p>
+            </section>
+        </div>
+    </div>
+
+    
+</div>
